@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <img src="./Scaler Logo.png" alt="Logo" id="image" height="70px"/>
-        <h1 style="font-family:'consolas', 'Arial Narrow', Arial, sans-serif;font-weight: bolder;font-size: 39px;">SCALER ADMIN LOGIN</h1>
+        <h1 style="font-family:'consolas', 'Arial Narrow', Arial, sans-serif;font-weight: bolder;font-size: 39px;">SCALER LOGIN</h1>
       </div>
       <div class="Logincontain">
       
@@ -20,10 +20,23 @@
           <div class="button">
           <input type="email" autocomplete="off" id="email" placeholder="Enter Admin ID">
           <input type="password" id="password" placeholder="Enter Password">
-          <button id="Sign" onclick="validateLogin()">Sign In</button>
+          <button id="Sign">Sign In</button>
         </div>
       </div>
       </div>
+      
+      <script src="./data/users.js"></script>
       <script src="admin.js"></script>
+      <script>
+        const emailInput = document.querySelector("#email");
+        const passwordInput = document.querySelector("#password");
+        const signInBtn = document.querySelector("#Sign");
+
+        signInBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          validateLogin();
+        })
+      </script>
 </body>
 </html>

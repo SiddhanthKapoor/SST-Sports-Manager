@@ -53,5 +53,24 @@
         <h4 id="title">Basketball</h4>
       </div>
     </div>
+
+    <script>
+      const currentURL = window.location.href;
+      let currentRes = currentURL.split("/");
+      currentRes = currentRes[currentRes.length - 1];
+      console.log({currentRes});
+
+      const currentUser = JSON.parse(localStorage.getItem("user"));
+      console.log({currentUser});
+
+      if (currentUser !== null) {
+        if (currentUser.role === "student") {
+          window.location.href = "sdash.html";
+        }        
+      } else {
+        window.location.href = "Login.html";
+      }
+
+    </script>
   </body>
 </html>
