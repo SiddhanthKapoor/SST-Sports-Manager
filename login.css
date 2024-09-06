@@ -113,8 +113,21 @@ input::placeholder {
   font-weight: 900;
 }
 
+h1{
+  font-size: 39px;
+}
 #Sign:hover{
   cursor: pointer;
   text-decoration: underline;}
 
-  
+  @media (max-width: 440px){
+    #image{
+      height: 35px;
+    }
+    h1{
+      font-size: 23px;
+    }
+    .container{
+      padding-top:30px ;
+    }
+  }
