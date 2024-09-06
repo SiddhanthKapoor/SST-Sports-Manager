@@ -65,10 +65,12 @@
 
       if (currentUser !== null) {
         if (currentUser.role === "student") {
+          alert("You cannot access admin's dashboard");
           window.location.href = "sdash.html";
         }        
       } else {
-        window.location.href = "Login.html";
+        alert("You are not logged in");
+        window.location.href = "index.html";
       }
 
     </script>

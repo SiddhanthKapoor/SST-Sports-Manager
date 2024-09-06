@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="icon" href="./Scaler Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./Scaler Logo.png" alt="Logo" id="image" height="70px" />
+      <h1 style="font-size: 39px">SCALER SPORTS MANAGER</h1>
+    </div>
+    <div class="Logincontain">
+      <div class="LoginBox">
+        <h5 id="Login">Login</h5>
+        <div class="button">
+          <input
+            type="email"
+            autocomplete="off"
+            id="email"
+            placeholder="Enter Email ID"
+          />
+          <input type="password" id="password" placeholder="Enter Password" />
+          <button id="Sign">Sign In</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./data/users.js"></script>
+    <script src="login.js"></script>
+    <script>
+      const emailInput = document.querySelector("#email");
+      const passwordInput = document.querySelector("#password");
+      const signInBtn = document.querySelector("#Sign");
+
+      signInBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        validateLogin();
+      });
+    </script>
+  </body>
+</html>

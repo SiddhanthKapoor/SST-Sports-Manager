@@ -4,11 +4,18 @@
 }
 body {
   text-align: center;
-  background: linear-gradient(to top, #0dcbffac, rgb(130, 130, 130));
+  background: linear-gradient(to top, #0051ff, rgb(255, 255, 255));
   background-attachment: fixed;
-  margin: 20px;
+  font-family: Montserrat;
+  min-height: 100vh;
+}
+input::placeholder {
+  color: rgb(0, 0, 0); 
+  opacity: 0.5;  /* Ensure full opacity if needed */
+  font-weight: 400;
 }
 .container {
+  translate:0 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,37 +30,43 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-  border-style: inset;
+  border-style: solid;
   border-color: rgba(255, 255, 255, 0.692);
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.219);
   /* background: linear-gradient(rgba(0, 64, 255, 0.32), rgb(208, 208, 208)); */
   padding: 20px;
-  margin: 170px;
   height: 260px;
   width: 310px;
   gap: 40px;
+  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
-.Logincontain {
+/* .Logincontain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   font-family: "playfair display";
-}
+  
+} */
 .button {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
 }
 
 #email {
   border-radius: 20px;
-  border-style: outset;
-  border-color: #5b99c2;
+  border-style: solid;
+  border-color: #000000d2;
   padding: 5px;
   width: 100%; /* Ensures it takes the full width of the container */
   text-align: left; /* Aligns the text to the left */
@@ -61,14 +74,21 @@ body {
   width: 250px;
   height: 30px;
   padding-left: 20px;
+  background-color: transparent;
+  color: #000000bc;
+  font-weight: 800;
 }
 #password {
   border-radius: 20px;
-  border-style: outset;
-  border-color: #5b99c2;
+  border-style: solid;
+  border-color: #000000d2;
   padding: 5px;
   height: 30px;
   padding-left: 20px;
+  background-color: transparent;
+  color: #000000bc;
+  font-weight: 800;
+  
 }
 #Login {
   width: 100%; /* Ensures it takes the full width of the container */
@@ -76,24 +96,25 @@ body {
   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-left: 13px;
   padding-top: 25px;
+  font-size: 30px;
 }
 
 #Sign {
-  border-radius: 15px;
-  border-style: inset;
-  border-color: #3da8ffbc;
+ border: none;
   padding: 5px;
-  width: 100%; /* Ensures it takes the full width of the container */
-  text-align: center; /* Aligns the text to the left */
+  width: 100%;
+  text-align: center;
   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
   width: 70px;
   height: 30px;
   margin-top: 15px;
   margin-left: 4px;
-  background-color: #ffffff;
+  background-color:transparent;
+  font-weight: 900;
 }
 
 #Sign:hover{
-  background-color: #54daffac;
   cursor: pointer;
-}
+  text-decoration: underline;}
+
+  

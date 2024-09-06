@@ -5,7 +5,7 @@
 }
 body {
   
-  background: linear-gradient(to top,#00294a, rgba(105, 105, 105, 0.623));
+  background: linear-gradient(to top,#1998ff, rgba(234, 250, 255, 0.623));
   background-attachment: fixed;
   margin: 20px;
 }
@@ -24,11 +24,14 @@ padding-right: 10px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-left: 40px;
   margin-top: 50px;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   width:fit-content;
   
+}
+#icon
+{
+  filter: grayscale(100%) brightness(0%);
 }
 .Cricket{
   display: flex;
@@ -74,12 +77,42 @@ padding-right: 10px;
 
 #title{
   font-size: 40px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Handjet;
   text-transform: uppercase;
 }
   #title:hover{
-    text-shadow: 0px 0px 60px #000000;
+    text-shadow: 0px 0px 60px #ffffff;
     cursor: pointer;
 
   }
+  h1{
+    font-family:Lato;
+          font-weight: 900;
+          font-size: 39px;
+          color: rgb(4, 0, 0);
+  }
+  h2{
+    margin-top: 40px; font-size: 50px; font-family:Poppins
+  }
+  h3{
+    font-family: Poppins , 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+  }
   
+  @media (max-width: 440px)
+  {
+    h1{
+      font-size: 40px;
+    }
+    h2{
+      padding-top: 30px;
+      font-size: 30px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    #image{
+      height: 50px;
+    }
+  }

@@ -9,6 +9,7 @@ function validateLogin() {
         console.log(correctpassword);
         return (user.email.toLowerCase() === email.toLowerCase() &&  correctpassword.toLowerCase() === password)
     });
+    
     if (user) {
         const stringifiedUser = JSON.stringify({
             email: user.email,
